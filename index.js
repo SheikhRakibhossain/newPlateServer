@@ -14,11 +14,14 @@ app.get('/',(req, res)=>{
 });
 
 app.get('/categories',(req, res)=>{
-    res.send(categories)
+    res.send(categories);
 });
 
 app.get('/news',(req, res)=>{
-    res.send(news)
+    res.send(news);
+})
+app.get('/news/category/:id',(req, res)=>{
+    res.send(category);
 })
 
 app.listen(port,(req, res)=>{
